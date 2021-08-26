@@ -13,15 +13,15 @@
 <body>
   <nav>
     <a href="#"><img src="./assets/images/logo.png" alt="logo les avocats de France" /></a>
-    <a href="#">Toute l'actu </a>
+    <a class="slide-line" href="#">Toute l'actu </a>
     <div class="oval"></div>
-    <a href="#">Le club</a>
+    <a class="slide-line" href="#">Le club</a>
     <div class="oval"></div>
-    <a href="#">Publication</a>
+    <a class="slide-line" href="#">Publication</a>
     <div class="oval"></div>
-    <a href="#">Nos partenaires</a>
+    <a class="slide-line" href="#">Nos partenaires</a>
     <div class="oval"></div>
-    <a href="#">Evènements</a>
+    <a class="slide-line" href="#">Evènements</a>
   </nav>
 
   <div class="nav-mobile">

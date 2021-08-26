@@ -39,6 +39,23 @@ body {
     display: none;
 }
 
+.slide-line::before {
+    content: "";
+    background: black;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 3px;
+    transform-origin: 100% 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.slide-line:hover::before {
+    transform-origin: 0 0;
+    transform: scaleX(1);
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -49,6 +66,7 @@ nav {
     a {
         color: black;
         text-decoration: none;
+        position: relative;
     }
     .oval {
         width: 2px;
@@ -172,6 +190,7 @@ h1 {
         }
     }
     .button-discover {
+        cursor: pointer;
         display: flex;
         color: black;
         background-color: #fff;
@@ -192,7 +211,7 @@ h1 {
 
 .cutted-circle {
     position: absolute;
-    top: 2892px;
+    top: 2895px;
     left: 1450px;
 }
 
@@ -225,6 +244,7 @@ h1 {
         line-height: 2.3rem;
     }
     .button-discover-post {
+        cursor: pointer;
         background-color: #ffb563;
         font-family: "seshatregular";
         width: 35%;
@@ -260,6 +280,7 @@ h1 {
         font-family: "poppinsbold";
     }
     .button-know {
+        cursor: pointer;
         display: flex;
         background-color: white;
         padding: 22px 15px 15px;
@@ -295,12 +316,17 @@ h1 {
         flex-wrap: wrap;
     }
     .card {
+        cursor: pointer;
         background-color: white;
         margin: 15px;
         height: 176px;
         width: 348px;
         box-shadow: 0px 1px 3px 0px #d0d0d0;
         text-align: center;
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+        }
         img {
             margin-top: 45px;
         }
@@ -308,6 +334,7 @@ h1 {
 }
 
 .button-partners {
+    cursor: pointer;
     display: flex;
     object-fit: cover;
     background-color: #ffb563;
@@ -334,6 +361,7 @@ h1 {
         justify-content: center;
     }
     .card-video {
+        cursor: pointer;
         width: 23%;
         margin: 0 0 90px 30px;
         .date {
